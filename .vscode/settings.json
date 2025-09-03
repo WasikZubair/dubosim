@@ -1,0 +1,36 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/wasik/ros2_ws/install/turtlesim_msgs/local/lib/python3.10/dist-packages",
+        "/home/wasik/ros2_ws/build/topic1",
+        "/home/wasik/ros2_ws/install/topic1/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/sonar_sensor",
+        "/home/wasik/ros2_ws/install/sonar_sensor/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/my_robot_controller",
+        "/home/wasik/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/grabber",
+        "/home/wasik/ros2_ws/install/grabber/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/dvl_sensor",
+        "/home/wasik/ros2_ws/install/dvl_sensor/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/camera_controller",
+        "/home/wasik/ros2_ws/install/camera_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/wasik/ros2_ws/install/turtlesim_msgs/local/lib/python3.10/dist-packages",
+        "/home/wasik/ros2_ws/build/topic1",
+        "/home/wasik/ros2_ws/install/topic1/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/sonar_sensor",
+        "/home/wasik/ros2_ws/install/sonar_sensor/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/my_robot_controller",
+        "/home/wasik/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/grabber",
+        "/home/wasik/ros2_ws/install/grabber/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/dvl_sensor",
+        "/home/wasik/ros2_ws/install/dvl_sensor/lib/python3.10/site-packages",
+        "/home/wasik/ros2_ws/build/camera_controller",
+        "/home/wasik/ros2_ws/install/camera_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
