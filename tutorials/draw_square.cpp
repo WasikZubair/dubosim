@@ -34,7 +34,7 @@
 #include <geometry_msgs/msg/twist.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <std_srvs/srv/empty.hpp>
-#include <turtlesim_msgs/msg/pose.hpp>
+#include <turtlesim/msg/pose.hpp>
 
 #include "dubosim/qos.hpp"
 
