@@ -35,7 +35,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_action/rclcpp_action.hpp>
 #include <geometry_msgs/msg/twist.hpp>
-#include <turtlesim_msgs/action/rotate_absolute.hpp>
+#include <turtlesim/action/rotate_absolute.hpp>
 
 #ifdef _WIN32
 # include <windows.h>  // NO LINT
