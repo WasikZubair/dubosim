@@ -18,7 +18,7 @@
 #include "std_srvs/srv/empty.hpp"
 
 #include "turtlesim_msgs/srv/kill.hpp"
-#include "turtlesim_msgs/srv/spawn.hpp"
+#include "turtlesim/srv/spawn.hpp"
 
 #define DEFAULT_BG_R 0x45
 #define DEFAULT_BG_G 0x56
