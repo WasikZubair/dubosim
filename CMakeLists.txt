@@ -53,7 +53,7 @@ target_link_libraries(dubosim_node PRIVATE
   ament_index_cpp::ament_index_cpp
   ${cpp_typesupport_target}
   ${geometry_msgs_TARGETS}
-  ${turtlesim_msgs_TARGETS}
+  ${turtlesim_TARGETS}
   Qt${QT_VERSION_MAJOR}::Widgets
   MocHeaders
   rclcpp::rclcpp
@@ -64,7 +64,7 @@ target_link_libraries(dubosim_node PRIVATE
 # === Teleop & tutorials ===
 add_executable(turtle_teleop_key tutorials/teleop_turtle_key.cpp)
 target_link_libraries(turtle_teleop_key PRIVATE
-  ${turtlesim_msgs_TARGETS}
+  ${turtlesim_TARGETS}
   ${geometry_msgs_TARGETS}
   MocHeaders
   rclcpp::rclcpp
@@ -73,7 +73,7 @@ target_link_libraries(turtle_teleop_key PRIVATE
 
 add_executable(draw_square tutorials/draw_square.cpp)
 target_link_libraries(draw_square PRIVATE
-  ${turtlesim_msgs_TARGETS}
+  ${turtlesim_TARGETS}
   ${geometry_msgs_TARGETS}
   MocHeaders
   rclcpp::rclcpp
@@ -82,7 +82,7 @@ target_link_libraries(draw_square PRIVATE
 
 add_executable(mimic tutorials/mimic.cpp)
 target_link_libraries(mimic PRIVATE
-  ${turtlesim_msgs_TARGETS}
+  ${turtlesim_TARGETS}
   ${geometry_msgs_TARGETS}
   MocHeaders
   rclcpp::rclcpp

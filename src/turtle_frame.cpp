@@ -17,7 +17,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_srvs/srv/empty.hpp"
 
-#include "turtlesim_msgs/srv/kill.hpp"
+#include "turtlesim/srv/kill.hpp"
 #include "turtlesim/srv/spawn.hpp"
 
 #define DEFAULT_BG_R 0x45
@@ -71,9 +71,9 @@ TurtleFrame::TurtleFrame(rclcpp::Node::SharedPtr & node_handle, QWidget * parent
       "clear", std::bind(&TurtleFrame::clearCallback, this, std::placeholders::_1, std::placeholders::_2));
   reset_srv_ = nh_->create_service<std_srvs::srv::Empty>(
       "reset", std::bind(&TurtleFrame::resetCallback, this, std::placeholders::_1, std::placeholders::_2));
-  spawn_srv_ = nh_->create_service<turtlesim_msgs::srv::Spawn>(
+  spawn_srv_ = nh_->create_service<turtlesim::srv::Spawn>(
       "spawn", std::bind(&TurtleFrame::spawnCallback, this, std::placeholders::_1, std::placeholders::_2));
-  kill_srv_ = nh_->create_service<turtlesim_msgs::srv::Kill>(
+  kill_srv_ = nh_->create_service<turtlesim::srv::Kill>(
       "kill", std::bind(&TurtleFrame::killCallback, this, std::placeholders::_1, std::placeholders::_2));
 
   // --- Parameter event subscriber ---
@@ -206,8 +206,8 @@ bool TurtleFrame::resetCallback(const std_srvs::srv::Empty::Request::SharedPtr,
   return true;
 }
 
-bool TurtleFrame::spawnCallback(const turtlesim_msgs::srv::Spawn::Request::SharedPtr req,
-                                turtlesim_msgs::srv::Spawn::Response::SharedPtr res)
+bool TurtleFrame::spawnCallback(const turtlesim::srv::Spawn::Request::SharedPtr req,
+                                turtlesim::srv::Spawn::Response::SharedPtr res)
 {
   std::string name = spawnTurtle(req->name, req->x, req->y, req->theta);
   if (name.empty()) {
@@ -219,8 +219,8 @@ bool TurtleFrame::spawnCallback(const turtlesim_msgs::srv::Spawn::Request::Share
   return true;
 }
 
-bool TurtleFrame::killCallback(const turtlesim_msgs::srv::Kill::Request::SharedPtr req,
-                               turtlesim_msgs::srv::Kill::Response::SharedPtr)
+bool TurtleFrame::killCallback(const turtlesim::srv::Kill::Request::SharedPtr req,
+                               turtlesim::srv::Kill::Response::SharedPtr)
 {
   auto it = turtles_.find(req->name);
   if (it == turtles_.end()) {

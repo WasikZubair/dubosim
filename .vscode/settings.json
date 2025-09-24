@@ -1,6 +1,6 @@
 {
     "python.autoComplete.extraPaths": [
-        "/home/wasik/ros2_ws/install/turtlesim_msgs/local/lib/python3.10/dist-packages",
+        "/home/wasik/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages",
         "/home/wasik/ros2_ws/build/topic1",
         "/home/wasik/ros2_ws/install/topic1/lib/python3.10/site-packages",
         "/home/wasik/ros2_ws/build/sonar_sensor",
@@ -17,7 +17,7 @@
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
     "python.analysis.extraPaths": [
-        "/home/wasik/ros2_ws/install/turtlesim_msgs/local/lib/python3.10/dist-packages",
+        "/home/wasik/ros2_ws/install/turtlesim/local/lib/python3.10/dist-packages",
         "/home/wasik/ros2_ws/build/topic1",
         "/home/wasik/ros2_ws/install/topic1/lib/python3.10/site-packages",
         "/home/wasik/ros2_ws/build/sonar_sensor",

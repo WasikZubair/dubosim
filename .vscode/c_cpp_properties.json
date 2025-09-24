@@ -6,7 +6,7 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/home/wasik/ros2_ws/install/turtlesim_msgs/include/**",
+        "/home/wasik/ros2_ws/install/turtlesim/include/**",
         "/opt/ros/humble/include/**",
         "/home/wasik/ros2_ws/src/dubosim/include/**",
         "include/**",

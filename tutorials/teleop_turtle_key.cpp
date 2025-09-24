@@ -191,7 +191,7 @@ public:
     twist_pub_ = nh_->create_publisher<geometry_msgs::msg::Twist>(
       "turtle1/cmd_vel",
       turtlesim::topic_qos());
-    rotate_absolute_client_ = rclcpp_action::create_client<turtlesim_msgs::action::RotateAbsolute>(
+    rotate_absolute_client_ = rclcpp_action::create_client<turtlesim::action::RotateAbsolute>(
       nh_,
       "turtle1/rotate_absolute");
   }
@@ -305,7 +305,7 @@ private:
 
   void sendGoal(float theta)
   {
-    using Rotate = turtlesim_msgs::action::RotateAbsolute;
+    using Rotate = turtlesim::action::RotateAbsolute;
     auto goal = Rotate::Goal();
     goal.theta = theta;
     auto send_goal_options = rclcpp_action::Client<Rotate>::SendGoalOptions();
@@ -332,8 +332,8 @@ private:
 
   rclcpp::Node::SharedPtr nh_;
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr twist_pub_;
-  rclcpp_action::Client<turtlesim_msgs::action::RotateAbsolute>::SharedPtr rotate_absolute_client_;
-  rclcpp_action::ClientGoalHandle<turtlesim_msgs::action::RotateAbsolute>::SharedPtr goal_handle_;
+  rclcpp_action::Client<turtlesim::action::RotateAbsolute>::SharedPtr rotate_absolute_client_;
+  rclcpp_action::ClientGoalHandle<turtlesim::action::RotateAbsolute>::SharedPtr goal_handle_;
 
   KeyboardReader input_;
 };
