@@ -27,7 +27,7 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 #include <rclcpp/rclcpp.hpp>
-#include <turtlesim_msgs/msg/pose.hpp>
+#include <turtlesim/msg/pose.hpp>
 #include <geometry_msgs/msg/twist.hpp>
 
 #include "dubosim/qos.hpp"
