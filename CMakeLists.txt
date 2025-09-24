@@ -26,7 +26,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
-find_package(turtlesim_msgs REQUIRED)
+find_package(turtlesim REQUIRED)
 
 if(${QT_VERSION_MAJOR} GREATER "5")
   qt_standard_project_setup()
