@@ -39,8 +39,8 @@
 #include "rclcpp/rclcpp.hpp"
 
 #include "turtlesim_msgs/action/rotate_absolute.hpp"
-#include "turtlesim_msgs/msg/pose.hpp"
-#include "turtlesim_msgs/msg/color.hpp"
+#include "turtlesim/msg/pose.hpp"
+#include "turtlesim/msg/color.hpp"
 #include "turtlesim_msgs/srv/set_pen.hpp"
 #include "turtlesim_msgs/srv/teleport_absolute.hpp"
 #include "turtlesim_msgs/srv/teleport_relative.hpp"
