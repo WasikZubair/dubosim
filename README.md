@@ -49,8 +49,15 @@ ros2 run turtlesim turtle_teleop_key
 Inspired by ROS’s Turtlesim, dubosim brings the underwater robotics spirit of BRACU Duburi into the ROS2 ecosystem — combining simplicity, creativity, and academic pride.
 
 
-👨‍💻 Developer
 
+
+
+
+
+
+
+
+👨‍💻 Developer
 Mohammad Wasik Zubair Abrar
 (BRACU Duburi Robotics Team)
 
